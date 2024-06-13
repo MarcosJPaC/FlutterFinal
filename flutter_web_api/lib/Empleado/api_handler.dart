@@ -110,7 +110,7 @@ class ApiHandler {
 
   Future<Empleado?> getUserById({required int userId}) async {
     final uri = Uri.parse(
-        "https://10.0.2.2:7267/api/Empleado/GetEmpleadoPorId/$userId");
+        "https://10.0.2.2:7267/api/Empleado/GetCategoriaPorId/$userId");
     Empleado? user;
     try {
       final response = await http.get(

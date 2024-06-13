@@ -103,7 +103,7 @@ class ApiHandler {
 
 
   Future<Categoria?> getUserById({required int userId}) async {
-    final baseUri = "https://localhost:7267/api/Categoria/GetCategoriaPorId"; // Actualiza el baseUri
+    final baseUri = "https://10.0.2.2:7267/api/Categoria/GetCategoriaPorId"; // Actualiza el baseUri
     final uri = Uri.parse("$baseUri/$userId");
     Categoria? user;
     try {
